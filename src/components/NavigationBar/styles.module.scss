@@ -1,0 +1,28 @@
+.divContainer {
+  max-width: 1120px;
+  margin: 0 auto;
+  position: relative;
+  top: 230px;
+
+  .navContent {
+    margin: 0 auto;
+    max-width: 769px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    .navButton {
+      display: inline-grid;
+      background: var(--with);
+      width: 160px;
+      height: 40px;
+      border-radius: 4px;
+      align-items: center;
+
+      font-size: 0.875rem; // 14px
+      color: #888888;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { Header } from "../components/Header"
+import { NavigationBar } from "../components/NavigationBar"
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <title>Document</title>
       </Head>
       <Header />
+      <NavigationBar />
     </>
   )
 }

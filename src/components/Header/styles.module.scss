@@ -2,9 +2,10 @@
   height: 24.938rem;
   background: #707070;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 68%);
-  position: fixed;
+  position: absolute;
   right: 0;
   left: 0;
+  top: 0;
 }
 
 .headerContent {
