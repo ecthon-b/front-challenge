@@ -1,0 +1,75 @@
+.contentContainer {
+  max-width: 1120px;
+  margin: 25rem auto;
+  padding: 0 2rem;
+  height: calc(100vh - 5rem);
+
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+
+  .hero {
+    max-width: 520px;
+    margin-top: 0px;
+
+    h1 {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      font-weight: 900;
+      color: #888888;
+    }
+
+    p {
+      color: #888888;
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+      margin-top: 1.5rem;
+    }
+  }
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 0.75rem;
+      line-height: 0.875rem;
+      color: #888888;
+      margin-bottom: 7px;
+    }
+
+    input {
+      width: 340px;
+      height: 30px;
+      margin-bottom: 20px;
+    }
+
+    .radioButton {
+      display: flex;
+
+      div {
+        display: flex;
+        margin-right: 20px;
+      }
+
+      .check {
+        width: 20px;
+        height: 20px;
+
+        margin-right: 0.75rem;
+      }
+    }
+
+    .sendButton {
+      width: 340px;
+      height: 39px;
+      align-items: center;
+      display: inline-grid;
+
+      font-size: 1rem;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #888888;
+      border-radius: 4px;
+    }
+  }
+}
