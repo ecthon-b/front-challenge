@@ -10,7 +10,7 @@ export function YourSpecialSelection() {
             </div>
             <div className={styles.productsContainer}>
                 <div className={styles.product}>
-                    <img className={styles.productImg} src="" alt="" />
+                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
                     <p className={styles.productName}>Nome do produto</p>
                     <p className={styles.productDescription}>Descrição do produto um pouco maior,
                         com duas linhas ou três que explica
@@ -22,7 +22,7 @@ export function YourSpecialSelection() {
                     <a className={styles.buttonBuy} href="">Comprar</a>
                 </div>
                 <div className={styles.product}>
-                    <img className={styles.productImg} src="" alt="" />
+                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
                     <p className={styles.productName}>Nome do produto</p>
                     <p className={styles.productDescription}>Descrição do produto um pouco maior,
                         com duas linhas ou três que explica
@@ -34,7 +34,7 @@ export function YourSpecialSelection() {
                     <a className={styles.buttonBuy} href="">Comprar</a>
                 </div>
                 <div className={styles.product}>
-                    <img className={styles.productImg} src="" alt="" />
+                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
                     <p className={styles.productName}>Nome do produto</p>
                     <p className={styles.productDescription}>Descrição do produto um pouco maior,
                         com duas linhas ou três que explica
@@ -46,7 +46,7 @@ export function YourSpecialSelection() {
                     <a className={styles.buttonBuy} href="">Comprar</a>
                 </div>
                 <div className={styles.product}>
-                    <img className={styles.productImg} src="" alt="" />
+                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
                     <p className={styles.productName}>Nome do produto</p>
                     <p className={styles.productDescription}>Descrição do produto um pouco maior,
                         com duas linhas ou três que explica
@@ -58,7 +58,7 @@ export function YourSpecialSelection() {
                     <a className={styles.buttonBuy} href="">Comprar</a>
                 </div>
                 <div className={styles.product}>
-                    <img className={styles.productImg} src="" alt="" />
+                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
                     <p className={styles.productName}>Nome do produto</p>
                     <p className={styles.productDescription}>Descrição do produto um pouco maior,
                         com duas linhas ou três que explica
@@ -70,7 +70,7 @@ export function YourSpecialSelection() {
                     <a className={styles.buttonBuy} href="">Comprar</a>
                 </div>
                 <div className={styles.product}>
-                    <img className={styles.productImg} src="" alt="" />
+                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
                     <p className={styles.productName}>Nome do produto</p>
                     <p className={styles.productDescription}>Descrição do produto um pouco maior,
                         com duas linhas ou três que explica
@@ -82,7 +82,7 @@ export function YourSpecialSelection() {
                     <a className={styles.buttonBuy} href="">Comprar</a>
                 </div>
                 <div className={styles.product}>
-                    <img className={styles.productImg} src="" alt="" />
+                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
                     <p className={styles.productName}>Nome do produto</p>
                     <p className={styles.productDescription}>Descrição do produto um pouco maior,
                         com duas linhas ou três que explica
@@ -94,7 +94,7 @@ export function YourSpecialSelection() {
                     <a className={styles.buttonBuy} href="">Comprar</a>
                 </div>
                 <div className={styles.product}>
-                    <img className={styles.productImg} src="" alt="" />
+                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
                     <p className={styles.productName}>Nome do produto</p>
                     <p className={styles.productDescription}>Descrição do produto um pouco maior,
                         com duas linhas ou três que explica
