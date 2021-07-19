@@ -1,5 +1,7 @@
 import Head from "next/head"
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header"
+import { ShareNews } from "../components/ShareNews";
 import { YourSpecialSelection } from "../components/YourSpecialSelection";
 
 import styles from './home.module.scss';
@@ -53,6 +55,8 @@ export default function Home() {
       </main>
 
       <YourSpecialSelection />
+      <ShareNews />
+      <Footer />
     </>
   )
 }
