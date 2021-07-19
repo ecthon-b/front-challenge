@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { Header } from "../components/Header"
+import { YourSpecialSelection } from "../components/YourSpecialSelection";
 
 import styles from './home.module.scss';
 
@@ -50,6 +51,8 @@ export default function Home() {
         </form>
 
       </main>
+
+      <YourSpecialSelection />
     </>
   )
 }

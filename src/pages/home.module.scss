@@ -1,11 +1,10 @@
 .contentContainer {
   max-width: 1120px;
-  margin: 25rem auto;
+  margin: 25rem auto 0 auto;
   padding: 0 2rem;
-  height: calc(100vh - 5rem);
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: sticky;
 
   .hero {
