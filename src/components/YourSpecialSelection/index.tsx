@@ -1,6 +1,32 @@
+import { useEffect, useState } from 'react';
+import { api } from '../../pages/api/api';
 import styles from './styles.module.scss';
 
+interface Products {
+    id: number;
+    name: string;
+    image: string;
+    oldPrice: number;
+    price: number;
+    description: string;
+    installments: {
+        count: number;
+        value: string;
+    };
+}
+
 export function YourSpecialSelection() {
+    const [productData, setProductData] = useState<Products[]>([]);
+
+    useEffect(() => {
+        loadProducts();
+    }, []);
+
+    async function loadProducts() {
+        const { data } = await api.get('products?page=1')
+        setProductData(data.products)
+    }
+
     return (
         <>
             <div className={styles.divContenteTitle}>
@@ -9,103 +35,24 @@ export function YourSpecialSelection() {
                 <div className={styles.lineDiv} />
             </div>
             <div className={styles.productsContainer}>
-                <div className={styles.product}>
-                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
-                    <p className={styles.productName}>Nome do produto</p>
-                    <p className={styles.productDescription}>Descrição do produto um pouco maior,
-                        com duas linhas ou três que explica
-                        melhor do que se trata.
-                    </p>
-                    <p className={styles.priceProduct}>De: R$23,99</p>
-                    <strong className={styles.pricePromotional}>Por: R$19,99 </strong>
-                    <p className={styles.pricePartials}>ou 2x de R$9,99</p>
-                    <a className={styles.buttonBuy} href="">Comprar</a>
-                </div>
-                <div className={styles.product}>
-                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
-                    <p className={styles.productName}>Nome do produto</p>
-                    <p className={styles.productDescription}>Descrição do produto um pouco maior,
-                        com duas linhas ou três que explica
-                        melhor do que se trata.
-                    </p>
-                    <p className={styles.priceProduct}>De: R$23,99</p>
-                    <strong className={styles.pricePromotional}>Por: R$19,99 </strong>
-                    <p className={styles.pricePartials}>ou 2x de R$9,99</p>
-                    <a className={styles.buttonBuy} href="">Comprar</a>
-                </div>
-                <div className={styles.product}>
-                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
-                    <p className={styles.productName}>Nome do produto</p>
-                    <p className={styles.productDescription}>Descrição do produto um pouco maior,
-                        com duas linhas ou três que explica
-                        melhor do que se trata.
-                    </p>
-                    <p className={styles.priceProduct}>De: R$23,99</p>
-                    <strong className={styles.pricePromotional}>Por: R$19,99 </strong>
-                    <p className={styles.pricePartials}>ou 2x de R$9,99</p>
-                    <a className={styles.buttonBuy} href="">Comprar</a>
-                </div>
-                <div className={styles.product}>
-                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
-                    <p className={styles.productName}>Nome do produto</p>
-                    <p className={styles.productDescription}>Descrição do produto um pouco maior,
-                        com duas linhas ou três que explica
-                        melhor do que se trata.
-                    </p>
-                    <p className={styles.priceProduct}>De: R$23,99</p>
-                    <strong className={styles.pricePromotional}>Por: R$19,99 </strong>
-                    <p className={styles.pricePartials}>ou 2x de R$9,99</p>
-                    <a className={styles.buttonBuy} href="">Comprar</a>
-                </div>
-                <div className={styles.product}>
-                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
-                    <p className={styles.productName}>Nome do produto</p>
-                    <p className={styles.productDescription}>Descrição do produto um pouco maior,
-                        com duas linhas ou três que explica
-                        melhor do que se trata.
-                    </p>
-                    <p className={styles.priceProduct}>De: R$23,99</p>
-                    <strong className={styles.pricePromotional}>Por: R$19,99 </strong>
-                    <p className={styles.pricePartials}>ou 2x de R$9,99</p>
-                    <a className={styles.buttonBuy} href="">Comprar</a>
-                </div>
-                <div className={styles.product}>
-                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
-                    <p className={styles.productName}>Nome do produto</p>
-                    <p className={styles.productDescription}>Descrição do produto um pouco maior,
-                        com duas linhas ou três que explica
-                        melhor do que se trata.
-                    </p>
-                    <p className={styles.priceProduct}>De: R$23,99</p>
-                    <strong className={styles.pricePromotional}>Por: R$19,99 </strong>
-                    <p className={styles.pricePartials}>ou 2x de R$9,99</p>
-                    <a className={styles.buttonBuy} href="">Comprar</a>
-                </div>
-                <div className={styles.product}>
-                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
-                    <p className={styles.productName}>Nome do produto</p>
-                    <p className={styles.productDescription}>Descrição do produto um pouco maior,
-                        com duas linhas ou três que explica
-                        melhor do que se trata.
-                    </p>
-                    <p className={styles.priceProduct}>De: R$23,99</p>
-                    <strong className={styles.pricePromotional}>Por: R$19,99 </strong>
-                    <p className={styles.pricePartials}>ou 2x de R$9,99</p>
-                    <a className={styles.buttonBuy} href="">Comprar</a>
-                </div>
-                <div className={styles.product}>
-                    <img className={styles.productImg} src="/images/mousepng.png" alt="" />
-                    <p className={styles.productName}>Nome do produto</p>
-                    <p className={styles.productDescription}>Descrição do produto um pouco maior,
-                        com duas linhas ou três que explica
-                        melhor do que se trata.
-                    </p>
-                    <p className={styles.priceProduct}>De: R$23,99</p>
-                    <strong className={styles.pricePromotional}>Por: R$19,99 </strong>
-                    <p className={styles.pricePartials}>ou 2x de R$9,99</p>
-                    <a className={styles.buttonBuy} href="">Comprar</a>
-                </div>
+
+
+                {
+                    productData.map(product => (
+                        <div key={product.id} className={styles.productContent}>
+                            <img className={styles.productImg} src={product.image} alt="" />
+                            <p className={styles.productName}>{product.name}</p>
+                            <p className={styles.productDescription}>{product.description}</p>
+                            <p className={styles.priceProduct}>De: {product.oldPrice}</p>
+                            <strong className={styles.pricePromotional}>Por: {product.price} </strong>
+                            <p className={styles.pricePartials}>ou {product.installments.count}x de R${product.installments.value}</p>
+                            <a className={styles.buttonBuy} href="">Comprar</a>
+                        </div>
+                    ))}
+
+
             </div>
+
             <div className={styles.morePruductsButton}>
                 <a className={styles.productMore} href="">Ainda mais produtos aqui!</a>
 
